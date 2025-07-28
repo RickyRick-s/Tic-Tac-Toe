@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'OldSchoolAdventures';
+  src: url('./fonts/OldSchoolAdventures-42j9.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'OldSchoolAdventures';
+  color: #FF7A30;
+  background-color: #E9E3DF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor {
+  text-align: center;
+  background-color: #465C88;
+  padding: 6rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.mensaje {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+
+}
+
+.marcador {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.celda {
+  background-color: #E9E3DF;
+  border-radius: 8px;
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.celda:hover {
+  background-color: #d5d5d5;
+}
+
+button#reiniciar {
+  padding: 0.5rem 1.5rem;
+  font-family: 'OldSchoolAdventures';
+  font-size: 3rem;
+  background-color: #000000;
+  color: #FF7A30;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button#reiniciar:hover {
+  background-color: #E9E3DF;
+}
